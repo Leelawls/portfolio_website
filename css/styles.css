@@ -4814,6 +4814,7 @@ input[type="button"].btn--primary:focus {
 .resume-pic_block {
     margin-bottom: var(--vspace-1_75);
     display: flex;
+    max-width: 100%;
     justify-content: space-between;
 }
 
