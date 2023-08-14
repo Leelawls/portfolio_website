@@ -1581,7 +1581,7 @@ html, body {
 }
 
 body {
-    background: var(--color-bg);
+    /* background: var(--color-bg); */
     font-family: var(--font-1);
     font-size: var(--text-size);
     font-style: normal;
@@ -3465,7 +3465,7 @@ input[type="button"].btn--primary:focus {
     width: 100%;
     height: 100%;
     background: black;
-    opacity: .5;
+    opacity: .3;
 }
 
 .s-hero__bg::after {
@@ -3479,7 +3479,7 @@ input[type="button"].btn--primary:focus {
     width: 100%;
     height: 100%;
     background: linear-gradient(360deg, black 15%, rgba(0, 0, 0, 0) 100%);
-    opacity: .4;
+    opacity: .8;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3775,19 +3775,79 @@ input[type="button"].btn--primary:focus {
  * # about
  *
  * ------------------------------------------------------------------- */
+ .s-about-header{
+    width: 100%;
+    text-align: center;
 
+}
+.s-about-txt{
+    color: white;
+    vertical-align: top;
+    margin: 0px;
+}
+
+
+.s-about-paragraph1 {
+    width: 100%;
+    flex: 1;
+    padding: 20px;
+    border-right: 2px solid white;
+
+}
+.s-about-p1txt{
+    width: 100%;
+    text-align: center;
+}
+.s-about-p2txt{
+    float:left;
+}
+.s-about-paragraph2 {
+    flex: 1;
+    padding: 20px;
+}
+
+.s-about-divider {
+    width: 12px;
+    height: 80%;
+    background-color: White;
+    margin: 10px;
+}
  .s-about {
     --color-border: var(--color-gray-16);
     background-color: var(--color-gray-17);
-    padding-top: calc(6 * var(--space));
+    padding-top: calc(1 * var(--space));
     padding-bottom: var(--vspace-4);
     color: rgb(255, 255, 255);
 }
 
-.s-about h3 {
-    margin-top: 0;
+
+.s-about h2 {
+    float: right;
+    margin: 0;
     color: white;
+    font-weight: bold;
+    font-size: 45px;
 }
+
+.s-about h3 {
+    float: right;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+.s-about h4 {
+    float: right;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+.s-about h5 {
+    float: right;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
 
 
 .s-about__pic {
@@ -3890,8 +3950,7 @@ input[type="button"].btn--primary:focus {
  *
  * ------------------------------------------------------------------- */
 .s-resume {
-    background-color: white;
-    padding-top: calc( 1 * var(--space));
+    padding-top: calc(5 * var(--space));
     padding-bottom: var(--vspace-4);
 }
 
@@ -4755,3 +4814,4 @@ input[type="button"].btn--primary:focus {
     display: flex;
     justify-content: space-between;
 }
+
