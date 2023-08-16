@@ -3780,6 +3780,11 @@ input[type="button"].btn--primary:focus {
     text-align: center;
 
 }
+.s-project-header{
+    width: 100%;
+    text-align: center;
+    color: black;
+}
 .s-about-txt{
     color: white;
     vertical-align: top;
@@ -4983,4 +4988,29 @@ input[type="button"].btn--primary:focus {
     background: gray
     z-index: 2;
     
+}
+/* Projects Cards */
+
+.u-text-placeholder {
+  background-color: #a2a8b1;
+  display: inline-block;
+  height: 9px;
+}
+
+.l-cards {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.c-card {
+  background-color: #ced4da;
+  border-radius: .6rem;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
 }
