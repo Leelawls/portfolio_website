@@ -5005,16 +5005,8 @@ input[type="button"].btn--primary:focus {
   display: flex;
   flex-direction: column;
   height: 500px;
-  width: 400px;
+  width: 100px;
 }
-
-@media (max-width: 100px) {
-    .cards{
-        height: 350px;
-        max-width: 250px;
-        width: 100%;
-    }
-  }
   
 .cards-inner {
     width: 100%;
@@ -5078,5 +5070,121 @@ input[type="button"].btn--primary:focus {
     justify-content: center;
     font-size: 24px;
     transform: rotateY(180deg);
+  }
+/* Skills Carosel */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  .carousel-container {
+    width: 100%;
+    margin: 50px auto;
+    position: relative;
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-left-color: #aaa;
+  }
+  @media (max-width: 768px) {
+    .carousel-container {
+      width: 95%;
+    }
+  }
+  .inner-carousel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .track {
+    display: inline-flex;
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+  }
+  .s-card-container {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    padding-right: 10px;
+  }
+  @media (max-width: 768px) {
+    .s-card-container {
+      width: 184px;
+    }
+  }
+  .s-card {
+    width: 100%;
+    height: 100%;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    background-position: center bottom;
+    background-size: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  .s-card1 {
+    background-image: url("https://cdn.pixabay.com/photo/2018/08/21/23/29/fog-3622519_960_720.jpg");
+  }
+  .s-card2 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/14/04/45/elephant-1822636_960_720.jpg");
+  }
+  .s-card3 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_960_720.jpg");
+  }
+  .s-card4 {
+    background-image: url("https://cdn.pixabay.com/photo/2014/08/29/03/02/horse-430441_960_720.jpg");
+  }
+  .s-card5 {
+    background-image: url("https://cdn.pixabay.com/photo/2014/12/08/17/52/mare-561221_960_720.jpg");
+  }
+  .s-card6 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/02/08/17/24/butterfly-2049567_960_720.jpg");
+  }
+  .s-card7 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/11/30/22/00/pumpkin-2989569_960_720.jpg");
+  }
+  .s-card8 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/24/22/25/woman-1539416_960_720.jpg");
+  }
+  .s-card9 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/11/15/09/28/music-player-2951399_960_720.jpg");
+  }
+  .s-card10 {
+    background-image: url("https://cdn.pixabay.com/photo/2018/02/23/04/38/laptop-3174729_960_720.jpg");
+  }
+  .s-card11 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/09/09/30/woman-1245817_960_720.jpg");
+  }
+  .s-card12 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/08/05/31/adorable-1807544_960_720.jpg");
+  }
+  
+  .nav button {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  .nav .prev {
+    left: -20px;
+    display: none;
+  }
+  .nav .prev.show {
+    display: block;
+  }
+  .nav .next {
+    right: -20px;
+  }
+  .nav .next.hide {
+    display: none;
   }
   
