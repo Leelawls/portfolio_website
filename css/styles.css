@@ -4945,6 +4945,7 @@ input[type="button"].btn--primary:focus {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    text-align: center;
 }
 
 .cards-front {
@@ -4980,11 +4981,11 @@ input[type="button"].btn--primary:focus {
 }
 
   .cards-back {
-    background-color: #d6e3ff;
+    background-color: #8bb0ff;
     color: #fff;
     display: flex;
     align-items: center;
-    border: 10px solid #d6e3ff;
+    border: 10px solid  #8bb0ff;
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
